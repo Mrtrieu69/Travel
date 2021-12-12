@@ -1,0 +1,171 @@
+:root{
+    --header-height: 78px;
+    --primary-color: #f3a46b;
+    --text-color: #858686;
+    --border-color: #e6e6e6;
+    --green-color: #1bbc9b;
+    --red-color: #ff6868;
+    --purple-color: #c755da;
+    --orange-color: #f3a46b;
+    --blue-color: #14b9d5;
+    --black-color: #555555;
+    --yellow-color: #ffd205;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+
+@keyframes fade-in-up{
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-from-left{
+    from{
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes fade-in-left{
+    from{
+        opacity: 0;
+        left: -100%;
+    }
+    to{
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes fade-in-right{
+    from{
+        opacity: 0;
+        left: 100%;
+    }
+    to{
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes fade-in-from-right{
+    from{
+        opacity: 0;
+        transform: translateX(100%)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes rotate{
+    from{
+        opacity: 0;
+        transform: rotate3d(1, 0, 0, 90deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotate3d(0);
+    }
+}
+
+@keyframes fade-none{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+/* Modal */
+.modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.modal-layout{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: fade-in ease 0.3s;
+}
+
+.modal-content{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    box-shadow: 0 0 10px black;
+    animation: fade-in ease 0.5s;
+}
+
+.modal-close{
+    position: absolute;
+    top: -24px;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all ease 0.2s;
+}
+
+.modal-close:hover{
+    opacity: 1;
+}

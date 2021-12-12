@@ -1,0 +1,150 @@
+
+/* Tablet & Mobile */
+@media (max-width: 1023px){
+    .header__list{
+        display: none;
+    }
+
+    .introduce-section__packages{
+        position: relative;
+        bottom: unset;
+        left: unset;
+        display: block;
+    }
+
+    .introduce-section__package{
+        width: 100%;
+        height: 600px;
+        margin: 10px 0;
+    }
+
+    .sale-section__countdown{
+        height: unset;
+    }
+    .sale-section__countdown-check{
+        margin: 60px 0 0 ;
+    }
+    .sale-section__tour-image {
+        height: 430px;
+        margin-top: 10px;
+    }
+    .footer-info__contact{
+        margin-bottom: 20px;
+    }
+    .footer-info__category-list{
+        margin-top: unset;
+    }
+    .header-sidebar-mobile-icon{
+        display: block;
+    }
+
+    .introduce-section__package-price{
+        transform: scale(2);
+        bottom: 50px;
+        top: unset;
+        right: 10px;
+    }
+    .modal-content{
+        height: 40%;
+        width: 90%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1023px) and (min-width: 768px){
+
+}
+
+
+/* Mobile */
+@media (max-width: 767px){
+    .block-animation{
+        display: none;
+    }
+    .about-section__item-descriptions{
+        display: none;
+    }
+    .about-section__item-buy-submit{
+        transform: translateX(50%);
+        right: 50%;
+    }
+    .about-section__item{
+        height: 400px;
+    }
+    .header-sidebar-mobile-icon{
+        margin-right: 20px;
+    }
+    .header__logo{
+        margin-left: 20px;
+    }
+    .introduce-section__block{
+        padding: 20px;
+        text-align: center;
+    }
+    .introduce-section__block-title{
+        line-height: 40px;
+    }
+    .introduce-section__packages{
+        margin: 0 10px;
+    }
+    .introduce-section__package{
+        height: 300px;
+    }
+    .introduce-section__video{
+        height: 500px;
+    }
+    .introduce-section__package-price{
+        transform: scale(1.5);
+        right: 0;
+    }
+    .services-section{
+        padding: 60px 10px;
+    }
+    .sale-section__tour-image{
+        height: 300px;
+    }
+    .sale-section__tour{
+        height: unset;
+    }
+    .order{
+        order: 1
+    }
+    .news-section__blog-image{
+        height: 350px;
+    }
+    .news-section__blog-content{
+        height: unset;
+    }
+    .footer-copyright__slogan{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-copyright__auth{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer-info__category-title{
+        margin-top: 10px;
+    }
+    .scroll-top{
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .about-section__item-buy-submit::after{
+        display: none;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .news-section__blog-read-more{
+        margin: unset;
+    }
+    .sale-section__tour-details{
+        margin: unset;
+    }
+}

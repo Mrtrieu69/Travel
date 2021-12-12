@@ -127,13 +127,6 @@
     .footer-info__category-title{
         margin-top: 10px;
     }
-    .scroll-top{
-        bottom: 20px;
-        right: 20px;
-        font-size: 20px;
-        width: 40px;
-        height: 40px;
-    }
     .about-section__item-buy-submit::after{
         display: none;
     }

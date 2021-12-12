@@ -136,6 +136,7 @@ header{
     right: 0;
     transition: transform ease 1s;
     animation: fade-in-from-right ease 0.5s;
+    -webkit-animation: fade-in-from-right ease 0.5s;
     background-color: var(--orange-color);
     overflow-y: scroll;
     display: none;
@@ -334,6 +335,7 @@ footer{
     width: 100%;
     height: 800px;
     animation: fade-in ease 1.5s;
+    -webkit-animation: fade-in ease 1.5s;
 }
 
 .about-section__item--slide-1{
@@ -381,6 +383,7 @@ footer{
     margin-bottom: 4px;
     transform: rotate(-4deg);
     animation: fade-in-right ease 0.5s;
+    -webkit-animation: fade-in-right ease 0.5s;
 }
 
 .about-section__item-title-sub{
@@ -396,6 +399,7 @@ footer{
     background-color: rgb(85,85,85);
     transform: rotate(-4deg);
     animation: fade-in-left ease 0.5s;
+    -webkit-animation: fade-in-left ease 0.5s;
 }
 .about-section__item-title-sub > span,
 .about-section__item-title > span{
@@ -419,6 +423,7 @@ footer{
     margin-bottom: 30px;
     width: 100%;
     animation: fade-in-up ease-in-out 1s;
+    -webkit-animation: fade-in-up ease-in-out 1s;
 }
 
 .about-section__item-description span{
@@ -446,6 +451,7 @@ footer{
     transition: all ease 0.15s;
     transform-origin: top;
     animation: fade-none ease 1s, rotate ease-in-out 0.7s 1s;
+    -webkit-animation: fade-none ease 1s, rotate ease-in-out 0.7s 1s;
 }
 
 .about-section__item-buy-submit:hover{

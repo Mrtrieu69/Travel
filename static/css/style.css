@@ -37,8 +37,22 @@ header{
     position: relative;
 }
 
-.header__item:hover .header__sub-list{
-    display: block;
+
+.header__item:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    transform-origin: right;
+    transition: transform ease 0.3s;
+    left: 0;
+    width: 100%;
+    transform: scale(0);
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.header__item:not(:last-child):hover::after{
+    transform-origin: left;
+    transform: scale(100%);
 }
 
 .heder__item-link{
@@ -55,9 +69,12 @@ header{
 }
 
 .header__sub-list{
-    display: none;
+    display: block;
+    overflow: hidden;
+    height: 0;
+    transition: height ease 0.3s;
     position: absolute;
-    top: 140%;
+    top: 120%;
     left: -20px;
     background-color: white;
     box-shadow: 0 0 10px rgb(245, 245, 245);

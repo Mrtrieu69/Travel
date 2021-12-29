@@ -133,3 +133,31 @@ sidebarIcon.addEventListener("click",()=>{
 sidebarClose.addEventListener("click",()=>{
     sidebar.style.display = "none"
 })
+
+
+// Set heigh animation
+const liItems = document.querySelectorAll(".header__item:not(:last-child):not(:first-child)")
+
+
+liItems.forEach(liItem => {
+
+    liItem.addEventListener("mouseenter",(e)=>{
+        var liLast = e.target.querySelector("ul li:last-child")
+        if(liLast){
+            var setTop = liLast.offsetTop + liLast.clientHeight
+            var ulItem = liLast.parentElement
+
+            ulItem.style.height = `${setTop}px`
+            
+        }
+    })
+
+    liItem.addEventListener("mouseleave", (e)=>{
+        var liLast = e.target.querySelector("ul li:last-child") 
+        if(liLast){
+            var ulItem = liLast.parentElement
+
+            ulItem.style.height = 0
+        }
+    })
+})
